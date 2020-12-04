@@ -1,0 +1,59 @@
+body {
+  margin:0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  background-color: skyblue;
+  font-size:25px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+h2{
+  padding-top:0;
+  margin:15px;
+}
+h3 {
+  color: skyblue
+}
+.작성 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid gray;
+}
+#아린작성 {
+  border-right: 1px solid gray;
+  margin:0;
+  padding-left:15px;
+  padding-right:10px;
+}
+#초원작성 {
+  margin:0;
+  padding-left:15px;
+  padding-right:10px;
+}
+.지출내역 {
+  padding-left:15px;
+}
+.정리 {
+  padding-left:15px;
+}
+#누가 {
+  font-weight: bold;
+}
+@media(max-width:500px){
+  .작성 {
+    display: block;
+    border-bottom: none ;
+  }
+  #초원작성 {
+    border-right:none;
+  }
+}
+p {
+  margin-top: 0;
+}
