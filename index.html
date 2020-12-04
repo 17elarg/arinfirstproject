@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="아린초원 style.css">
+    <title>아린초원의 공동가계부</title>
+  </head>
+  <body>
+    <h1>아린초원의 공동가계부</h1>
+
+
+    <input id="밤_낮" type="button" value="밤" onclick="
+      var target = document.querySelector('body');
+      if(this.value === '밤') {
+        target.style.backgroundColor='black' ;
+        target.style.color='white';
+        this.value = '낮' ;
+      } else {
+        target.style.backgroundColor='white' ;
+        target.style.color='black' ;
+        this.value = '밤' ;
+      }
+    ">
+
+        <input id="밤_낮2" type="button" value="밤" onclick="
+          if(document.querySelector('#밤_낮2').value === '밤') {
+            document.querySelector('body').style.backgroundColor='black' ;
+            document.querySelector('body').style.color='white';
+            document.querySelector('#밤_낮2').value = '낮' ;
+          } else {
+            document.querySelector('body').style.backgroundColor='white' ;
+            document.querySelector('body').style.color='black' ;
+            document.querySelector('#밤_낮2').value = '밤' ;
+          }
+        ">
+
+        <input type="button" value="밤 모드" onclick="
+          document.querySelector('body').style.backgroundColor='black' ;
+          document.querySelector('body').style.color='white'">
+        <input type="button" value="낮 모드" onclick="
+          document.querySelector('body').style.backgroundColor='white' ;
+          document.querySelector('body').style.color='black'">
+
+
+    <div class="작성">
+      <div id="아린작성">
+        <h3>아린</h3>
+        지출액 : <input type="text" size="10px" onchange="alert('입력됐음!')">
+        <input type="button" name="" value="입력"><br>
+        내애용 : <input type="text" size="10px" onchange="alert('입력됐음!')">
+        <input type="button" name="" value="입력"><br><br>
+      </div>
+      <div id="초원작성">
+      <h3>초원</h3>
+      지출액 : <br>
+      내용 :
+      </div>
+    </div>
+
+    <div class="지출내역">
+      <h3>지출 내역</h3>
+      지출한 내역 촤라락 뜨고 <br>
+      아린 지출, 초원 지출 각각 볼 수 있게 <br>
+      <script>
+        document.write(1+1);
+      </script>
+    </div><br>
+    <div class="정리">
+      <h3>정리</h3>
+      총 지출 : <br>
+      아린 지출 : <br>
+      초원 지출 : <br>
+      <div id="누가">누가 누구에게 얼마 줘야 하는가? : </div>
+    </div>
+    <input type="button" name="" value="아린 or 초원?" onclick="alert('hi')">
+  </body>
+</html>
